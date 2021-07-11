@@ -32,20 +32,20 @@ $ pip3 install tiny-tree
 from tiny_tree.to_tree import to_tree
 
 to_tree([
-  { id: 10000, parentId: None, title: "标题 1" },
-  { id: 20000, parentId: None, title: "标题 2" },
-  { id: 11000, parentId: 10000, title: "标题 1-1" },
+  { "id": 10000, "parentId": None, "title": "标题 1" },
+  { "id": 20000, "parentId": None, "title": "标题 2" },
+  { "id": 11000, "parentId": 10000, "title": "标题 1-1" },
 ])
 # [
 #   {
-#     id: 10000,
-#     parentId: None,
-#     title: '标题 1',
-#     children: [
-#       { id: 11000, parentId: 10000, title: '标题 1-1', children: [] }
+#     "id": 10000,
+#     "parentId": None,
+#     "title": '标题 1',
+#     "children": [
+#       { "id": 11000, "parentId": 10000, "title": '标题 1-1', "children": [] }
 #     ]
 #   },
-#   { id: 20000, parentId: None, title: '标题 2', children: [] },
+#   { "id": 20000, "parentId": None, "title": '标题 2', "children": [] },
 # ]
 ```
 
@@ -90,16 +90,16 @@ print(tree)
 # output:
 # [
 #   {
-#     uid: 10000,
-#     pid: None,
-#     title: '标题 1',
-#     sort: 1,
-#     checked: false,
-#     items: [
-#       { uid: 11000, pid: 10000, title: '标题 1-1', sort: 3, checked: false, items: [] }
+#     "uid": 10000,
+#     "pid": None,
+#     "title": '标题 1',
+#     "sort": 1,
+#     "checked": false,
+#     "items": [
+#       { "uid": 11000, "pid": 10000, "title": '标题 1-1', "sort": 3, "checked": false, "items": [] }
 #     ]
 #   },
-#   { uid: 20000, pid: None, title: '标题 2', sort: 2, checked: false, items: [] }
+#   { "uid": 20000, "pid": None, "title": '标题 2', "sort": 2, "checked": false, "items": [] }
 # ]
 ```
 
