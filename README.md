@@ -1,5 +1,7 @@
 # tiny-tree
 
+<a href="https://pypi.org/project/tiny-tree/"><img src="https://img.shields.io/pypi/v/tiny_tree" alt="Version" /></a>
+
 > 快速，轻量，无依赖的树结构数据处理函数库。
 
 ---
